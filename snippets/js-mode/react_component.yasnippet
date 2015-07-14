@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# contributor: Translated to yasnippet by sublime-snippet import
+# key: rcc
+# name: React: component skeleton
+# --
+
+var React = require('react');
+
+var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
+
+	render: function() {
+		return (
+			${0:<div />}
+		);
+	}
+
+});
+
+module.exports = ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}};
